@@ -1,0 +1,46 @@
+/*CSS DE PARTE GRIS DE HEADER*/
+.fondo-gris{background-color:$gris-claro; border-bottom: 0.15px solid $azul;
+ul,ul:not(.head_links){margin-bottom:0px !important;}	
+.fa-facebook{color:#2A65A1;}
+.fa-twitter{color:#4BB7D9;}
+.fa-google-plus{color:#CA4739;}
+.fa-envelope{color:#FFBF00;}
+.fa-rss{color:#FF8000;}
+li a i.fa{margin-right:2px;}
+.boton-search{background-color:$gris-claro; border:none; border-left:0.5px solid $azul; border-right:0.5px solid $azul;padding-top:10px; padding-bottom:10px; color:$azul; font-family:'Open Sans'; font-weight:600;
+i.fa{margin-left:3px;}}
+}
+.head_links li a{text-decoration:none; color:$azul; font-weight:700; margin-right:8px; font-family:'Open Sans';}
+.boton-rojo{background-color:#DD4A4A;color:#fff; font-family:'Open Sans'; font-weight:600;}
+.redes-base{margin-left:7%;}
+
+/*ROW DEL LOGO*/
+.base-domingo{border:1px solid $gris-claro; position:relative; padding-top:10px; padding-bottom:10px; border-bottom:1px solid $guinda;
+h6 {font-weight:700;}}
+.caja-domingo{position:absolute; background-color:$guinda; color:#fff; font-family:'Open Sans'; font-weight:700; padding:2px 5px; top:-5px; left:37%;
+p{margin-bottom:0px !important;}}
+.gustavo{border:1px solid $gris-claro; border-right:none; background-color:$gris-oscuro; position:relative;max-width:250px;
+.gustavo_dentro{border-radius:8px 0px 0px 8px; background-color:#fff; padding-left:45px; padding-right:22px; margin-bottom:-1px; margin-right:-1px; border-right:1px solid #fff;
+h6{font-weight:700; font-family:'Open Sans';}
+p{color:$azul; font-style:italic; font-weight:400;}}
+img.pull-right{position:absolute; top:0px;}}
+
+/*ROW DE NAV*/
+.navega-rojo{ul{background-color:$rojo; border-radius:5px; padding:5px; padding-right:0px;
+	li{border-right:1px solid $guinda; padding-right:5px; padding-left:5px;}
+	li:last-child{border-right:none;}
+	button{background:transparent; color:#fff; font-weight:600; border:none; font-family:'Open Sans';}
+	button.active{outline:none; border:none;}
+	ul.dropdown-menu{z-index:2000000;}
+	li a{color:#fff; font-family:'Open Sans'; font-weight:600;}}}
+
+/*ROW DE NOTICIAS*/
+.temas{
+	ul{border-radius:8px; padding:0px; background-color:$gris-claro; min-height:30px;
+	li:first-child{background-color:#000; color:#fff; padding:8px; border-radius:8px 0px 0px 8px;}}}
+.noticia-item{width:110px !important;
+img,p{display:inline-block;}
+img{margin-right:25px;}
+}
+.noticias-gris{margin-top:5px;}
+.div-n-gris{margin-left:5%; border:none !important; box-shadow:none !important;}

@@ -1,0 +1,179 @@
+include ci/mixin_p.jade
+include ci/mixin_k.jade
+extends ci/base.jade
+block title
+    title home
+block domingo
+    h6 HABLA LA LIDERESA DEL NACIONALISMO
+block content
+    .row
+        h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANAA
+        ul.list-inline.list-unstyled.text-center.particular
+            li
+                a(href="#")
+                    img.img-responsive(src="../image/face.png")
+            li
+                a(href="#")
+                    img.img-responsive(src="../image/twitter.png")
+            li
+                a(href="#")
+                    img.img-responsive(src="../image/google.png")
+            li
+                img.img-responsive(src="../image/bullet.gif")
+            li
+                p.plomo Hace 12 minutos
+            li
+                img.img-responsive(src="../image/bullet.gif")
+            li
+                p.plomo POLÍTICA
+    .row.principal
+        .col-md-6.margint
+            +noticias('','../image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral')
+        .col-md-6.margint
+            .row
+                +noticias('','../image/imagen-martin-belaunde.jpg','Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por S/.3 000 millones | FOTOS')
+            .row
+                +noticias('','../image/peru vs paraguay.jpg','Sub 20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO')
+    .row.text-center.fondo_columnistas#mi-linearo
+        .etiqueta.colum
+            h4 COLUMNISTA
+        .contenedor_columnistas.row
+            .col-md-2.text-center
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+            .col-md-2
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+            .col-md-2
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+    .row
+        .col-md-8
+            .row.margint
+                .col-md-6
+                    +noticias('Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015:altas,bajas y rumores de los equipos peruanos','Todo sobre Mecado de Pases 2015')
+                .col-md-6
+                    +noticias('Regimen Laboral juvenil','../image/img_especiales_aside.jpg','Ollanta Humala:Los que han perdido,más allá de tambores y panderetas,son 2 millones de jóvenes | VIDEO','Todod sobre Regimen laboral juvenil')
+            .row.margint
+                .col-md-6
+                    +noticias('Champions League','../image/Real Madrid.jpg','¿Podrá el Real Madrid  conseguir la"Undécima"?','Todo sobre Champions League')
+                .col-md-6
+                    +noticias('Super Bowl','../image/copa.jpg','Super Bowl XLIX:New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahwks | VIDEO','Todo sobre Super Bowl')
+            .row.ml-0.margin15
+                a(href="#") 
+                    h4 ULTIMAS NOTICIAS
+                    img.img-responsive(src="../image/double-arrow-bottom.png") 
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas           
+        .col-md-4.quitar
+            .row
+                img.img-responsive(src="../image/banner-aside-home.jpg")
+            .row.text-center.formato.padding22
+                img.img-responsive.mg-auto(src="../image/img_sucribe.png")
+                .bg-white
+                    p <strong>Suscribete </strong> a nuestro boletin
+                    input.form-control.tamano(type='text')
+                    button.btn.btn-sm SUSCRIBIRSE
+            .row
+                .borderaweita
+                    .row
+                        img.img-responsive.mg-auto(src="../image/logo_aweita.jpg")
+                    +clases
+                    +clases
+                    p.c_morado.text-center Más en<spam> Aweita.pe </spam>
+                    hr.c_morado.hr5
+            .row#mi-lineaplo
+                .etiqueta 
+                    h4 FOTOS DESTACADAS
+                img.img-responsive(src="../image/img_fotodes_prominent.jpg")
+                p Lineas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace/FOTOS
+                +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie | FOTOS')
+                +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Alianza Lima vs Fénix: intimos ganaron 1-0 en"Noche Blanquiazul" | VIDEO Y FOTOS')
+                +aweita('../image/rafael nadal.jpg','Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open | FOTOS')
+            .row#mi-lineaplo
+                .etiqueta 
+                    h4 ESPECIALES
+                img.img-responsive(src="../image/infografia_1.png")     
+                img.img-responsive(src="../image/infografia_2.png")                    
+                img.img-responsive(src="../image/infografia_1.png")                    
+                img.img-responsive(src="../image/infografia_2.png")
+                    
+            .row#mi-linearo
+                .etiqueta 
+                    h4 CARLINCATURA DEL DÍA
+                h4<strong> Carlincaturas 30-01-2015</strong>
+                img.img-responsive(src="../image/img_carlincatura_sd.jpg")
+                p.text-center.rojo.maegin6 Todas las Carlincaturas
+            .row#mi-lineaplo
+                .etiqueta 
+                    h4 NUESTROS BLOGUEROS
+                div
+                    +bloguer
+                    +bloguer
+                    h4.text-center.rojo.maegin6 Todos los Blogs
+            .row#mi-linearo
+                .etiqueta 
+                    h4 EDICIÒN IMPRESA
+                div
+                    h5 República-Lima
+                    img.img-responsive(src="../image/img_impreso_sd_prominent.jpg")
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','Extorcion en menores en colegio','Republica-Norte')
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','Lluvias en Arequipa inundas casas y causan caos en las calles','Republica-Sur')
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','El ojo de Oblitas','Domingo')
+            //just some parashop
+            .row.linea
+                div
+                    hr.hr2.mg
+            .row.infografia.bd-t.bd-b
+                div
+                    h4.text-center.pd5.c_tur.font-tit-col INFOGRAFÍAS
+                +infografia("../image/infografia_1.png")
+                +infografia("../image/infografia_2.png")
+            .row.estadistica.pd-all-fondo
+                div.pd-all.bg-white.mg-botton
+                    +pregunta("../image/img_pregunta.png", "La pregunta de hoy", "¿Cree usted que la premier Ana Jara debe renunciar?", "Si", "No", "VOTAR", "Ver resultados" )
+                div.pd-all.bg-white
+                    +pregunta2("La pregunta de ayer", "¿Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?", "../image/porcentaje.jpg", "Ver preguntas pasadas")
+            .row.libero.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_libero.jpg")
+                +foto-img("../image/deporte_1.png", "Fiorentina 1-1 a Génova con Juan Vargas -VIDEO")
+                +foto-img("../image/deporte_2.png", "Farfan: no sabe cuando volvera a las canchas-FOTOS")
+                +foto-img("../image/deporte_1.png", "Barcelona vs Villarreal: con soles 2-3 de Neymar-VIDEO")
+                +foto-img("../image/deporte_2.png", "Perú cayó 3-1 ante Colombia por el final Sub 20-VIDEO", "Libero.pe")
+                hr.hr3
+            .row.popular.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_popular.jpg")
+                +foto-img("../image/popular_1.png","Joshua Ivanof está loco por olor de Melissa Loza")
+                +foto-img("../image/popular_2.png","Corintians: Paolo Guerrero le dedica gol a Alondra")
+                +foto-img("../image/popular_1.png","Angie Arizaga es amenazada de muerte y lo denuncia")
+                +foto-img("../image/popular_2.png","Philips Seymour: un año sin el premiado actor", "elPopular.pe")
+                hr.hr4
+            .row.wapa.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_wapa.jpg")
+                +foto-img("../image/wapa_3.png", "¿Cómo renovar el guardaropa de los más pequeños?")
+                +foto-img("../image/wapa_1.png", "Shakira y Piquè ya son padres por segunda vez")
+                +foto-img("../image/wapa_3.png", "Ted 2: mira el trailer de la cinta que ya esta por salir")
+                +foto-img("../image/wapa_2.png", "¿Como usar los zapatos altos sin dolor?", "Wapa.pe")
+                hr.hr3
+            .row.reportero.pd-all-fondo.mg-top2
+                div.pd-all.bg-white.mg-botton
+                    +reportero("../image/img_reporteroc.png", "Reportero ciudadano", "../image/img_sd_reporteroc.jpg", "Estacionamiento indebido", "¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.")
+                p.text-center
+                    button.btn.btn-sm.bg-c-rojo.text-center ENVIAR FOTOS
+                p.text-center
+                    strong
+                        a.c_rojo(href="#") Más fotos
+block footer
+    +footer("../image/logo-grupo-la-republica.png",'Grupo La República Digital','Jirón Camaná 320 Cercado de Lima','Teléfono: 711-6000','(Central Telefónica)','Todos los derechos reservados-2015')

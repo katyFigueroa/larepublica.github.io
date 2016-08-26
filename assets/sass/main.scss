@@ -1,0 +1,127 @@
+/**{outline:1px solid rgba(255,0,0,0.3);}*/
+@import "code/common";
+@import "code/base";
+@import "code/blog";
+@import "code/columnista";
+.footer{background-color:$color_gris;
+margin-top:20px;}
+.footer img{margin:auto;padding:20px;}
+.footer li{list-style:none;}
+.pie-pagina{background-color:$color_gris;}
+.pie-pagina li{font-size:10px;}
+hr{margin:0px;}
+
+//home//
+.quitar > .row {margin-left:0px; margin-right:0px;}
+.contenedor_columnistas{padding: 10px;}
+.padding{padding-left:0px; padding-right:0px;}
+.plomo{color:#768696;}
+.blanco{color:#fff;position: absolute;bottom:1%;-webkit-box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);
+-moz-box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);
+box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);}
+.rojo{color:#CD4C6C;font-weight: bold;text-align: center;text-decoration: none;}
+.rojoiz{color:#CD4C6C;font-weight: bold;text-decoration: none;}
+.tamano{width: 80%;margin-left:11%;}
+.fondo_columnistas{background: #F2F2F2}
+.margint{margin: 2% 0%;}
+.maegin6{margin: 6% 0%;}
+.padding22 {padding:2%;}
+.margin15{margin-top: 13%;}
+.border_p{border:1px solid #CDCDCD;}
+.cont_img{position: relative;}
+.colum{max-width: 50%;margin: auto;
+		margin-top: -95px;padding:2%;
+		margin-bottom: -3%;}
+@mixin nombre($color){
+	border-top: 7px solid $color;
+}
+@mixin etiqueta($color){
+	.etiqueta > h4{
+		background: $color;
+		margin: auto;
+		margin-top: -48px;
+		color:#fff;
+		text-align: center;
+		max-width: 50%;
+		padding:2%;
+		margin-bottom: 4%;
+		}
+	}
+#mi-linearo {
+  @include nombre(#B20000);
+  @include etiqueta(#B20000);
+  position: relative;
+  padding-top: 11%;
+  }
+#mi-lineaplo {
+  @include nombre(#768696);
+  @include etiqueta(#768696);
+  position: relative;
+  padding-top: 11%;
+ }
+.img_bor{border: 1px solid #fff;}
+.list{margin-top: -22%;}
+.linea{margin: 2% 0%;}
+.borderaweita{border:2px solid gray;margin: 4% 0%;padding: 4% 0%;}
+.relative{position: relative;}
+.absolute{position: absolute; top: 85px; font-size:small;}
+.formato{background-image: url("../image/bg_trama_rayas.png");}
+.etiqueta{text-align: center;}
+.c_morado{color:#872F85;}
+//home//
+.pie-pagina{
+	background-color:$color_gris;
+	li{font-size:12px;display: inline-block;
+		list-style: none;
+		padding:0 5px;}
+	hr{margin:0px;}
+}
+.contact{
+	.escribir{width: 100%;
+		background-color:$color_gris;
+		padding:5px;margin:10px 0;
+		border-radius:3px;}
+	li.ej{margin-bottom: 4px;list-style:none;}
+	textarea{height: 150px;}
+	img{margin:auto;}
+} 
+.infografia{margin-bottom:20px;
+	h4{width:150px;color:white;margin:auto;margin-top:-10px;}
+}
+.estadistica{background-image:url("../image/bg_trama_rayas.png");
+	img{margin:auto;margin-top:-45px;}
+	.barra{margin-top:0px;}
+}
+.reportero{background-image:url("../image/bg_trama_rayas.png");
+	img{margin:auto;margin-top:-45px;}
+	.auto{margin-top:0px;}
+}
+
+// ---responsive---contacto
+@media screen and(max-width:750px){
+	.contact{
+		.escribir{padding:5px;}
+		.input-radio{margin-left:40px;}
+	}
+	.footer{
+		.colum-logo{padding:10px 15px;}
+		p{text-align:center;}}
+	.border_p{
+		img{width:100%;}
+		.blanco{font-size:16px;}
+	}
+	.contenedor_columnistas
+			{img{width: 30%;}}
+	.colum{
+		margin-top: 15px;
+		h4{max-width:150%;
+			font-size: 14px;}
+	}
+	.noticias_centrales{
+		.imagen_media{width:100%;}
+		p{font-size:10px;}
+	}
+	.particular{display:none;}
+	}
+
+	//patty

@@ -1,0 +1,48 @@
+include ci/mixin_k.jade
+extends ci/base.jade
+block title
+	title contact
+block domingo
+	h6 HABLA LA LIDERESA DEL NACIONALISMO
+block content
+	.contact
+		.row
+		h1.text-center <strong> Contáctese con nosotros </strong>
+		p(style={padding:"15px 5px"}) Llena este formulario si necesitas enviarnos alguna informaciòn acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo pueden hacer llegar a los redactores su opinion a cerca d elos contenidos de una determinada secciòn el cual podrà elegir como destinatario.
+		.row.mg-botton2
+			.col-md-8.col-md-offset-2
+				input(type="text" placeholder="Nombres Completos" class="escribir")
+				input(type="text" placeholder="Correo Electrónico" class="escribir")
+				input(type="text" placeholder="Teléfono" class="escribir")
+				h4 Elija un destinatario
+				.row.input-radio
+					.col-md-6
+						input(type='radio', name='transporte', value='1')
+						| 	Sujerencia para el sitio web
+						br
+						input(type='radio', name='transporte', value='2')
+						| 	Dirección periodística
+						br
+						input(type='radio', name='transporte', value='3')
+						| 	Dirección Comercial
+						br
+						input(type='radio', name='transporte', value='4')
+						| 	Cartas al Director
+						br
+						input(type='radio', name='transporte', value='5')
+						| 	Promociones y productos del diario
+						br
+						input(type='radio', name='transporte', value='6')
+						| 	Archivo periodística
+					.col-md-6
+						ul.pd-0.mg-top.hidden-xs
+							li.ej.pull-right.fs-12 (Ej: funcionamiento y mejoras para el sitio)
+							li.ej.pull-right.fs-12 (Ej: sugerencias para las notas de prensa)
+							li.ej.pull-right.fs-12 (Ej: publicidad en diarios o sitios web)
+							li.ej.pull-right.fs-12 (Ej: denuncias, comentarios e impresiones)
+							li.ej.pull-right.fs-12 (Ej: promociones, tablets, etc)
+							li.ej.pull-right.fs-12 (Ej: ediciones impresas/fotos)
+				textarea(type="text" placeholder="Mensaje" class="escribir")
+				img.img-responsive(src="../image/contacto_submit_btn.jpg")
+block footer
+	+footer("../image/logo-grupo-la-republica.png",'Grupo La República Digital','Jirón Camaná 320 Cercado de Lima','Teléfono: 711-6000','(Central Telefónica)','Todos los derechos reservados-2015')

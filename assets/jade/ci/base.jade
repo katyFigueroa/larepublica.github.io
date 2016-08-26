@@ -1,0 +1,169 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    block title
+     title Home        
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css')          
+    link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/jquery.bxslider.css')      
+    link(rel='stylesheet', type='text/css', href='../css/main.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='../js/bootstrap.min.js')
+    script(type='text/javascript', src='../js/main.js')
+    script(type='text/javascript', src='../js/jquery.bxslider.min.js')                  
+  body
+   header
+    .fondo-gris
+     .container-fluid
+      .row.pd2
+       .col-md-8.col-md-offset-2
+        img.img-responsive(src="../image/banner_top.jpg")
+      .row.pd2.pdb-0
+       .col-md-4.col-md-offset-2.pd-0
+        ul.list-inline.head_links.pd-0
+         li
+          a.fs-10(href="http://www.libero.pe/") LIBERO.PE 
+         li
+          a.fs-10(href="http://www.elpopular.pe/") ELPOPULAR.PE  
+         li
+          a.fs-10(href="http://fundacionmohme.org/") FUNDACIÓN GUSTAVO MOHME LLONA
+       .col-md-4.redes-base.pd-0
+        ul.list-inline.pd-0
+         li
+          button.boton.boton-rojo.fs-10 SUSCRÍBETE AL BOLETIN
+         li
+          a(href="https://www.facebook.com/larepublica.pe?fref=ts")            
+           i.fa.fa-facebook(aria-hidden="true")
+         li
+          a(href="https://twitter.com/larepublica_pe")            
+           i.fa.fa-twitter(aria-hidden="true")
+         li
+          a(href="https://plus.google.com/+larepublica/posts")            
+           i.fa.fa-google-plus(aria-hidden="true")
+         li
+          a(href="http://larepublica.pe/boletin")            
+           i.fa.fa-envelope(aria-hidden="true")
+         li
+          a(href="#")            
+           i.fa.fa-rss(aria-hidden="true")
+         li
+          button.fs-10.boton-search BUSCAR
+           i.fa.fa-search
+   .container-fluid
+    .row
+     .col-md-2.pdt-130.hidden-xs
+      img(src="../image/publi-1.jpg")        
+     .col-md-8
+      .row.logo.pd  
+       .col-md-5.pd
+        a(href="home.html")
+         img.pull-left(src="../image/logo-la-republica.jpg") 
+       .col-md-3.pd-0
+        .base-domingo.text-center
+         block domingo
+          h6 Domingo            
+         .caja-domingo
+          p.fs-10 DOMINGO     
+       .col-md-4
+        .gustavo.ml-negativo.text-center
+         img.pull-left(src="../image/img_editorial_text.jpg")
+         .gustavo_dentro.text-center.inline-block
+          h6 La corrupción, los orígenes
+          p.fs-10 por: Gustavo Mohme Llona
+         img.pull-right.inline-block(src="../image/img_author.jpg")           
+      .row.navega-rojo
+       ul.list-inline.ml-0
+        li
+         a.fs-11(href="#") POLÍTICA
+        li
+         a.fs-11(href="#") ECONOMÍA
+        li
+         a.fs-11(href="#") SOCIEDAD
+        li
+         a.fs-11(href="#") ELECC. REGIONALES
+        li
+         a.fs-11(href="#") DEPORTES
+        li
+         a.fs-11(href="#") CHAMPIONS L.
+        li
+         a.fs-11(href="#") ESPECTÁCULOS
+        li
+         a.fs-11(href="#") ED.IMPRESA
+        li
+         a.fs-11(href="#") REGIONALES
+        li.dropdown
+         button.fs-11(id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") MÁS SECCIONES
+          span.caret
+         ul.dropdown-menu(aria-labelledby="dLabel")
+          li
+          a(href="blog.html") BLOGS
+          li
+          a(href="columnistas.html") COLUMNISTAS
+          li
+          a(href="contact.html") CONTACTO 
+      //- //menuuuuu
+      .row
+        .nav.navbar.navbar-default(style={background-color:"#ba1414", border-color:"#ba1414"} role="navigation")
+          .navbar-header
+            button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse")
+              span.sr-only Desplegar navegación
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="#") looooogooooooo
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            ul.nav.navbar-nav 
+              li
+                a(style=color:"white" href="#") POLÍTICA
+                a(style=color:"white" href="#") ECONOMÍA
+                a(style=color:"white" href="#") SOCIEDAD
+                a(style=color:"white" href="#") DEPORTES
+                a(style=color:"white" href="#") ESPECTÁCULOS
+                a(style=color:"white" href="#") REGIONALES
+                a(style=color:"white" href="#") MÁS SECCIONES
+      //- //  fin menu-- 
+      .row.temas
+       ul.list-inline.ml-0
+        li.fs-11.pt-sans.col-md-2.text-center TEMAS DEL DíA
+        li.col-md-10
+         .col-md-11.div-n-gris        
+          .noticias-gris         
+           .noticia-item
+            p.fs-11 Globos de oro
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Youtube
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 PNP
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Charlie Hebdo
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 FC Barcelona
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Alianza Lima
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Balón de Oro
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Alianza Lima
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Balón                                                                        
+      .row
+       img.img-responsive(src="../image/banner-header.jpg")
+      block content          
+     .col-md-2.pdt-130.hidden-xs  
+      img(src="../image/publi-2.jpg")
+    block footer    

@@ -1,0 +1,50 @@
+mixin bloque(titular,imagen,nombre,frase)
+ .col-md-4.text-center
+  .border-blogs 
+   p Lunes 14 de julio de 2015
+   h4= titular
+   .cuadrado-mix
+    .imagen-mix.pull-left
+     img(src=imagen)
+    .texto-mix
+     p= nombre
+     h5= frase 
+
+mixin celda-columnista(nombre,imagen,frase)
+ .col-md-3.text-center
+  .cuadrado-mix-columnista
+   .imagen-mix-columnista.pull-left
+    img(src=imagen)
+   .texto-mix-columnista
+    p=nombre
+    h5=frase       
+mixin libros
+ .row
+  +bloque('El gol de la muerte','../image/blog_avatar_01.jpg','BLOG','LIBROS')
+  +bloque('Dios a muerto... tengo las manos cubiertas de sangre','../image/blog_avatar_02.jpg','BLOG','Ya lo pasado, PASADO')
+  +bloque('¿Cuál es tu queso favorito?','../image/blog_avatar_03.jpg','BLOG','Décimas cosas')
+mixin gol-blog  
+ .row 
+  +bloque('El gol de la muerte','../image/blog_avatar_01.jpg','BLOG','Y tú... ¿Ya hiciste click?')
+  +bloque('Dios a muerto... tengo las manos cubiertas de sangre','../image/blog_avatar_02.jpg','BLOG','Educando con Amor Firme')
+  +bloque('¿Cuál es tu queso favorito?','../image/blog_avatar_03.jpg','BLOG','Moda entre Tendente')
+mixin gol-columnistas
+ .row 
+  +bloque('El gol de la muerte','../image/columnista1.jpg','Augusto Álvarez Rodrich','Claro y directo')
+  +bloque('Dios a muerto... tengo las manos cubiertas de sangre','../image/columnista2.jpg','Mirko Louer','Observador')
+  +bloque('¿Cuál es tu queso favorito?','../image/columnista3.jpg','Aldo Miyashiro','Chino de mi barrio')
+ .row 
+  +bloque('El gol de la muerte','../image/columnista4.jpg','Francisco Durand','Tiro al blanco')
+  +bloque('Dios a muerto... tengo las manos cubiertas de sangre','../image/columnista5.jpg','Humberto Campodónico','Cristal de Mira')
+  +bloque('¿Cuál es tu queso favorito?','../image/columnista6.jpg','Javier Ágreda','Jaque perpetuo')  
+mixin fila-tabla-columnista
+ .row.ml-0
+  +celda-columnista('Francisco Durand','../image/columnista5.jpg','Tiro al blanco') 
+  +celda-columnista('Humberto Campodónico','../image/columnista6.jpg','Cristal de Mira') 
+  +celda-columnista('Javier Ágreda','../image/columnista3.jpg','Jaque Perpetuo') 
+  +celda-columnista('Javier Ágreda','../image/columnista1.jpg','Jaque Perpetuo') 
+ .row.ml-0
+  +celda-columnista('Francisco Durand','../image/columnista2.jpg','Delito de opinión') 
+  +celda-columnista('Humberto Campodónico','../image/blog_avatar_01.jpg','Actualidad Económica - Oscar Dancourt') 
+  +celda-columnista('Javier Ágreda','../image/columnista4.jpg','Mirada Externa') 
+  +celda-columnista('Javier Ágreda','../image/blog_avatar_02.jpg','Defensa')          

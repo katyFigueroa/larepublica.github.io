@@ -1,0 +1,16 @@
+.cuadros-blogs button{background-color:$rojo; color:#fff; font-weight:600; margin-top:30px;margin-bottom:30px; padding-left:20px; padding-right:20px;}
+.tabla-columnista ul{background-color:$rojo; min-height:45px; padding:15px 40px; margin-top:20px;
+li{padding-left:15px; padding-right:15px;}	
+li a{ border-radius:8px; color:#fff; padding:8px;}
+li:first-child a{background-color:$guinda;}}
+
+.cuadrado-mix-columnista{min-height:90px; background-color:$gris-claro; width:98%; padding:10px;}
+.imagen-mix-columnista{border:3px solid #fff; top:13px; left:10px;}
+.caja-tabla-columnista{margin-bottom:20px;}
+.caja-tabla-columnista .col-md-3{
+	padding-left:5px !important; padding-right:5px !important;}
+.texto-mix-columnista{
+p,h5{margin-left:80px; text-align:left;}
+p{font-family:'Oswald'; font-weight:600; font-size:10px;}
+h5{font-weight:700;color:$azul; font-size:12px;}}
+.caja-tabla-columnista .row{margin-top:8px;}

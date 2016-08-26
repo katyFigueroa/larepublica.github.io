@@ -1,0 +1,15 @@
+.titulo-blog{h1{font-size:45px;}
+h4{color:$azul;}
+img{margin-left:15px;}}
+.cuadros-blogs{margin-top:30px;}
+.cuadros-blogs .row{margin-top:20px;}
+.border-blogs{border:1px solid $gris-claro; min-height:195px; position:relative;
+p{margin-top:15px; font-size:10px;}
+h4{font-weight:700;}}
+.cuadro-mix{position:absolute; right:5px;}
+.cuadrado-mix{min-height:90px; background-color:$gris-claro; position:absolute;bottom:8px; right:8px; width:95%;}
+.imagen-mix{position:absolute; z-index:100; border:3px solid #fff; top:13px; left:10px;}
+.texto-mix{
+p,h5{margin-left:80px; text-align:left;}
+p{font-family:'Oswald'; font-weight:600; font-size:12px;}
+h5{font-weight:700;color:$azul; font-size:15px;}}

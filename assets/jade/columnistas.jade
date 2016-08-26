@@ -1,0 +1,47 @@
+include ci/mixins-sara.jade
+extends ci/base.jade
+block title
+ title Columnistas
+block domingo
+ h6 HABLA LA LIDERESA DEL NACIONALISMO
+block content
+ .row.titulo-blog
+  h1.h-titular Columnistas
+  h4.inline-block.oswald LO ÚLTIMO EN COLUMNISTAS
+  img.inline-block(src="../image/double-arrow-bottom.png")
+ .container-fluid
+  .row.cuadros-blogs.text-center
+   +gol-columnistas
+   +gol-columnistas
+   button.boton TODAS LAS COLUMNAS
+ .row.titulo-blog       
+  h4.inline-block.oswald TODOS LOS COLUMNISTAS
+  img.inline-block(src="../image/double-arrow-bottom.png")
+ .row.tabla-columnista
+  ul.list-inline.ml-0
+   li
+    a(href="#") TODOS 
+   li
+    a(href="#") A B C 
+   li
+    a(href="#") D E F 
+   li
+    a(href="#") G H I 
+   li
+    a(href="#") J K L 
+   li
+    a(href="#") M N O 
+   li
+    a(href="#") PQRS 
+   li
+    a(href="#") TUV 
+   li
+    a(href="#") WXYZ 
+  .caja-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista
+   +fila-tabla-columnista                                                          

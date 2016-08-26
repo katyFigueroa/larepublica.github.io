@@ -1,0 +1,72 @@
+mixin noticias(titulo,imgn,text,resena)
+	.border_p
+		h5.rojo=titulo
+		.cont_img
+			img.img-responsive(src=imgn)
+			h4.blanco=text
+		p.text-center=resena
+mixin foto_columnista(img,text,texts)
+	img.img-responsive.img_bor.mg-auto(src=img)
+	p.mg.fs-10=text
+	p.fs-10=texts
+mixin ultimas_n(fecha,titulo,img,lead,face,twitter,google,punto1,comentario,numero,punto2,clase,punto3,simbolo)
+	.row.ml-0.relative.noticias_centrales
+		p=fecha
+		h3=titulo
+		.col-md-4.padding
+			img.img-responsive.imagen_media(src=img)
+		.col-md-8
+			p=lead
+			ul.list-inline.list-unstyled.absolute.particular
+				li
+					img.img-responsive(src=face)
+				li
+					img.img-responsive(src=twitter)
+				li
+					img.img-responsive(src=google)
+				li
+					img.img-responsive(src=punto1)
+				li
+					img.img-responsive(src=comentario)
+				li
+					p.plomo=numero
+				li
+					img.img-responsive(src=punto2)
+				li
+					p.plomo=clase
+				li
+					img.img-responsive(src=punto3)
+				li
+					img.img-responsive(src=simbolo)
+	hr.linea
+mixin ultimas
+	+ultimas_n('Hace 1 hora 12 minutos','Emma Watson protagonizará "La bella y la bestia" | VIDEO','../image/Emma.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de "La Bella y la Bestia" en la versión de carne y hueso.','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/video.png')
+	+ultimas_n('Hace 1 hora 12 minutos','Roque Benavides respalda proyecto Tía María y espera que Conga se socialice','../image/fotogaleria_main.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañia de Maria Buenaventura,Roque Benavides, el proyecto Tia Maria,que promueve Southern Perú, ya debe...','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','0','../image/bullet.gif','Arequipa')
+	+ultimas_n('Hace 1 hora 12 minutos','YouTuve:hombre finge ahogarse y su perro lo rescata | FOTOS','../image/perro.jpg','Un perrito de nombre Jack, rescato a su dueño quien habia caido al lago luego de esbalar con una cascara de platano.','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/foto.png')
+	+ultimas_n('Hace 1 hora 12 minutos','Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y si estara contra el Atletico de Madrid','../image/Real Madrid.jpg','Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba,el Comité de Competición ha llegado a la...','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','Arequipa')
+mixin aweita(foto,descripcion)
+	.col-md-5
+		img.img-responsive(src=foto)
+	.col-md-7
+		p=descripcion
+mixin clases
+	+aweita('../image/deporte_1.png','Juan Román Riquelme, el adiós al Ultimo 10 de Argentina.')
+	+aweita('../image/deporte_1.png','San Lorenzo perdio 2-1, Racin fue mejor tacticamente y ofensivamente.')
+mixin blogueros(titu,tex)
+	.col-md-3
+		img.img-responsive(src='../image/img_blogueros.jpg')
+	.col-md-9
+		p=titu
+		h6=tex		
+mixin bloguer
+	+blogueros('Augusto Alvarez Rodrich','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez Rodrich','El unico  pulpin es Humala')
+	+blogueros('Augusto Alvarez Rodrich','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez Rodrich','El unico  pulpin es Humala')
+mixin periodicos(periodico,descrip,zona)
+	.col-md-6.margint
+		img.img-responsive(src=periodico)
+	.col-md-6
+		h5=descrip
+		a
+			p.rojoiz=zona
